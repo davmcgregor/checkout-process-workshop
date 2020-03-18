@@ -19,6 +19,17 @@ class Shop
       item == "B"  
       }
     end
+
+    if arr.count("A") > 2 
+      if arr.count("A").even?
+        total = total + ((arr.count("A") / 3) * 130) + 50
+      elsif arr.count("A").odd?
+        total = total + ((arr.count("A") / 3) * 130)
+      end
+      arr.delete_if { |item| 
+      item == "A"  
+      }
+    end
     
     arr.each {|item|
     if item == 'A'
