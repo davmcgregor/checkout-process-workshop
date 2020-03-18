@@ -71,3 +71,4 @@ shop.checkout('AAAAAA') # => 260
 | shop.checkout('AAAA')  | 180        |
 | shop.checkout('AAAAA') | 230        |
 | shop.checkout('AAAAAA')| 260        |
+| shop.checkout('AAAAAAA')| 310        |
