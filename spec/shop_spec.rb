@@ -17,5 +17,13 @@ describe Shop do
     it 'takes an input of D and returns 15' do
       expect(Shop.checkout('D')).to eq(15)
     end
+
+    it 'takes an input of AA and returns 100' do
+      expect(Shop.checkout('AA')).to eq(100)
+    end
+
+    it 'takes an input of BB and returns 60' do
+      expect(Shop.checkout('BB')).to eq(60)
+    end
   end
 end
