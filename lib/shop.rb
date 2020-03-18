@@ -3,6 +3,12 @@ class Shop
     arr = items.split("")
     total = 0
 
+    arr.each { |item|
+      if item.match(/[a-z]/)
+        return -1
+      end
+    }
+
     if arr.count("B") > 1 
       if arr.count("B").odd?
         total = total + ((arr.count("B") / 2) * 45) + 30
