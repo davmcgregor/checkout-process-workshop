@@ -3,13 +3,17 @@ class Shop
     arr = items.split("")
     total = 0
 
-    if arr.count("B") == 2
-      total += 45
+    if arr.count("B") > 1 
+      if arr.count("B").odd?
+        total = total + ((arr.count("B") / 2) * 45) + 30
+      elsif arr.count("B").even?
+        total = total + ((arr.count("B") / 2) * 45)
+      end
       arr.delete_if { |item| 
-        item == "B"  
+      item == "B"  
       }
     end
-
+    
     arr.each {|item|
     if item == 'A'
       total += 50
