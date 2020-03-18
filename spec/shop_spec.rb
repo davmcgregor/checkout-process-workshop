@@ -22,8 +22,17 @@ describe Shop do
       expect(Shop.checkout('AA')).to eq(100)
     end
 
-    it 'takes an input of BB and returns 60' do
-      expect(Shop.checkout('BB')).to eq(60)
+    it 'takes an input of CC and returns 40' do
+      expect(Shop.checkout('CC')).to eq(40)
     end
+
+    it 'takes an input of DD and returns 30' do
+      expect(Shop.checkout('DD')).to eq(30)
+    end
+
+
+      # it 'takes an input of BB and returns 45' do
+    #   expect(Shop.checkout('BB')).to eq(45)
+    # end
   end
 end

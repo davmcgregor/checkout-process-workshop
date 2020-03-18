@@ -54,9 +54,12 @@ shop.checkout('AAAAAA') # => 260
 | shop.checkout('C')     | 20         |
 | shop.checkout('D')     | 15         |
 | shop.checkout('AA')    | 100        |
-| shop.checkout('BB')    | 60         |
 | shop.checkout('CC')    | 40         |
 | shop.checkout('DD')    | 30         |
+| shop.checkout('BB')    | 45         |
+| shop.checkout('BBB')   | 75         |
+| shop.checkout('BBBB')  | 90         |
+
 | shop.checkout('AB')    | 80         |
 | shop.checkout('aBc')   | -1         |
 | shop.checkout('-B8x')  | -1         | 
