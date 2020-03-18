@@ -30,9 +30,8 @@ describe Shop do
       expect(Shop.checkout('DD')).to eq(30)
     end
 
-
-      # it 'takes an input of BB and returns 45' do
-    #   expect(Shop.checkout('BB')).to eq(45)
-    # end
+    it 'takes an input of BB and returns 45' do
+      expect(Shop.checkout('BB')).to eq(45)
+    end
   end
 end
