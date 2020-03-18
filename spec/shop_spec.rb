@@ -81,5 +81,9 @@ describe Shop do
     it 'takes an input of AAA and returns 130' do
       expect(Shop.checkout('AAA')).to eq(130)
     end
+
+    it 'takes an input of AAAA and returns 180' do
+      expect(Shop.checkout('AAAA')).to eq(180)
+    end
   end
 end
