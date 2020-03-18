@@ -4,7 +4,7 @@ class Shop
     total = 0
 
     arr.each { |item|
-      if item.match(/[a-z]/)
+      if item.match(/[^ABCD]/)
         return -1
       end
     }

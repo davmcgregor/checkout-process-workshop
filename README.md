@@ -64,6 +64,7 @@ shop.checkout('AAAAAA') # => 260
 | shop.checkout('AB')    | 80         |
 | shop.checkout('aBc')   | -1         |
 | shop.checkout('-B8x')  | -1         | 
+| shop.checkout('-')     | -1         | 
 | shop.checkout(18)      | -1         |
 | shop.checkout('ABCD')  | 115        |
 | shop.checkout('AAA')   | 130        |

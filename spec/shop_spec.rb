@@ -61,5 +61,9 @@ describe Shop do
     it 'takes an input of aBc and returns -1' do
       expect(Shop.checkout('aBc')).to eq(-1)
     end
+
+    it 'takes an input of -B8x and returns -1' do
+      expect(Shop.checkout('-B8x')).to eq(-1)
+    end
   end
 end
