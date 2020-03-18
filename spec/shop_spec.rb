@@ -69,5 +69,9 @@ describe Shop do
     it 'takes an input of - and returns -1' do
       expect(Shop.checkout('-')).to eq(-1)
     end
+
+    it 'takes an input of 18 and returns -1' do
+      expect(Shop.checkout('18')).to eq(-1)
+    end
   end
 end
